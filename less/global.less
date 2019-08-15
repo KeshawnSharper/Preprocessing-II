@@ -37,10 +37,21 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  @media @mobile{
+    .mobile();
+  }
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.btn{
+.button(@button-bg,10px,5px);
+@media @mobile{
+  .mobile();
+  
+}
+
 }
